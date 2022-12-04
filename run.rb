@@ -1,5 +1,7 @@
 
 require_relative "./lib/day1/calories.rb"
+require_relative "./lib/day2/rps.rb"
+
 
 require_relative "./lib/splash.rb"
 exit = false
@@ -21,7 +23,9 @@ until exit == true do
         mode.top_three
 
     when 2
-        puts "\r\n under construction!"
+        mode = RockPaperScissors.new
+        mode.total_score
+        mode.corrected_total_score
 
     when 3
         puts "\r\n under construction!"
